@@ -1,0 +1,14 @@
+.Letter {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  border-bottom: 10px solid black;
+  color: transparent;
+  margin: 0 0.05em;
+  font-family: "Futura";
+  font-size: 100px;
+}
+
+.Letter.revealed {
+  color: inherit;
+}
