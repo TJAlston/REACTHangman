@@ -5,7 +5,7 @@ class Board extends Component {
   render () {
     return (
       <div className='Board'>
-        <h1>IM THE BOARD</h1>
+        <h2>ONLY SIX CHANCES</h2>
         <Alphabet onPlay={this.props.onPlay}/>
 
       </div>
@@ -49,11 +49,19 @@ class Alphabet extends Component {
 }
 
 class AlphaLetter extends Component {
+  constructor () {
+    super()
+    this.state = {
+      used:false
+    }
+  }
   handleClick = () => {
     this.props.onPlay(this.props.character)
+    this.setState({used:true})
+
   }
   render () {
-    return <button onClick={this.handleClick}>{this.props.character}</button>
+    return <button disabled={this.state.used} onClick={this.handleClick}>{this.props.character}</button>
   }
 }
  export default Board

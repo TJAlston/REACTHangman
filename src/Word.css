@@ -1,4 +1,7 @@
 .Word {
-  font-family: 'nosifer', cursive;
+  font-family: 'nosifer';
+  font-size: 30px;
   font-size: 3em;
+  margin-top: -225px;
+  color: rgb(121, 21, 36);
 }

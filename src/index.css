@@ -5,10 +5,27 @@ html {
 }
 
 body {
+  position: relative;
+  font-family: 'Nosifer';
+  font-size: 80px;
+  margin-top: -100px;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  padding-top: 10px;
+}
+h1 {
+  color: rgb(134, 31, 17);
+  text-shadow: 5px 5px 20px white;
+}
+
+h2 {
+  position: relative;
   font-family: 'Nosifer';
   font-size: 40px;
-  align-items: center;
-  color: red;
-  min-height: 100vh;
+  padding-left: 50px;
+  color: rgb(40, 40, 43);
+  text-shadow: 5px 5px 15px white;
   overflow: hidden;
 }
